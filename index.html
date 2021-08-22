@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- tailwind cdn  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .common:active {
+            background-color: black;
+            color: white;
+        }
+
+        .common:hover {
+            /* background-color: rgba(128, 125, 125, 0.596); */
+        }
+
+        #output-field {
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-400">
+    <main class="mx-auto w-96 bg-gray-50 my-2 rounded-2xl">
+        <!-- <h1 class="w-auto m-4 text-center text-xl font-semibold py-2 bg-red-100 leading-none">Calculator</h1> -->
+        <!-- Display Section  -->
+        <section class="mt-2">
+            <div id="history-field"
+                class="w-auto m-4 bg-green-200 h-12 rounded-2xl text-xl font-semibold text-right p-3 text-left">
+            </div>
+            <div id="output-field"
+                class="w-auto m-4 bg-green-200 h-24 rounded-2xl text-4xl font-semibold text-right p-3">
+            </div>
+        </section>
+        <!-- botton section  -->
+        <section>
+            <div id='div-parent' class="grid grid-cols-4 gap-2 p-4 text-2xl font-semibold">
+                <button class="oparetor common font-semibold bg-red-400 rounded-full w-20 h-20">C</button>
+                <button class="square common bg-gray-300 rounded-full w-20 h-20 " disabled>x<sup>2</sup></button>
+                <button class="cube common bg-gray-300 rounded-full w-20 h-20" disabled>x<sup>3</sup></button>
+                <button class="oparetor common bg-gray-400 rounded-full w-20 h-20">+</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">1</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">2</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">3</button>
+                <button class="oparetor common bg-gray-400 rounded-full w-20 h-20">-</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">4</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">5</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">6</button>
+                <button class="oparetor common bg-gray-400 rounded-full w-20 h-20">*</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">7</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">8</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">9</button>
+                <button class="oparetor common bg-gray-400 rounded-full w-20 h-20">/</button>
+                <button class="number  font-medium common bg-gray-400 rounded-full w-20 h-20">.</button>
+                <button class="number common bg-gray-400 rounded-full w-20 h-20">0</button>
+                <button class="oparetor common bg-gray-400 rounded-full w-20 h-20 ">=</button>
+                <button class="oparetor common bg-gray-400 rounded-full w-20 h-20 ">% </button>
+            </div>
+        </section>
+
+    </main>
+    <script src="scritp.js"></script>
+</body>
+
+</html>
